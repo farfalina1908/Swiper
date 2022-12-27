@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/swiper-reviews.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Seymour+One:regular&display=swap" rel="stylesheet" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- <div class="reviews reviews__container"> -->
+<div class="swiper-container container gallery-slider">
+  <div class="swiper-wrapper gallery-wrapper">
+  <!-- <div class="gallery"> -->
+  <div data-hash="slide-1" class="swiper-slide gallery__slide">
+    <picture>
+      <source
+        srcset="
+          ./images/gallery_images/slide1@1.png 1x,
+          ./images/gallery_images/slide1@2.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="gallery__img"
+        src="./images/gallery_images/slide1.png"
+        alt="fruit ice-cream"
+      />
+    </picture>
+  </div>
+  <div data-hash="slide-2" class="swiper-slide gallery__slide">
+    <picture>
+      <source
+        srcset="
+          ./images/gallery_images/slide2@1.png 1x,
+          ./images/gallery_images/slide2@2.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="gallery__img"
+        src="./images/gallery_images/slide2.png"
+        alt="wow ice-cream"
+      />
+    </picture>
+  </div>
+  <div data-hash="slide-3" class="swiper-slide gallery__slide">
+    <picture>
+      <source
+        srcset="
+          ./images/gallery_images/slide3@1.png 1x,
+          ./images/gallery_images/slide3@2.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="gallery__img"
+        src="./images/gallery_images/slide3.png"
+        alt="ice-cream cool"
+      />
+    </picture>
+  </div>
+<!-- </div> -->
+</div>
+<!-- </div> -->
+<div>
+
+<div class="reviews reviews__container">
+  <div class="swiper-container container reviews-slider">
+    <div class="swiper-wrapper reviews-wrapper">
+      <div data-hash="slide-1" class="swiper-slide reviews__slide">
+        <div class="reviews__slide-image">
+          <img
+            class="reviews__photo"
+            srcset="
+              ./images/reviews_images/user_1@1x.webp 1x,
+              ./images/reviews_images/user_1@2x.webp 2x
+            "
+            src="./images/reviews_images/user_1@1x.webp"
+            alt="users photo"
+          />
+        </div>
+        <p class="reviews__text">
+          I love visiting your cafe. You prepare the most delicious ice cream in
+          Los Angeles! In addition, you have beautiful serving, cozy atmosphere
+          and polite staff.
+        </p>
+        <p class="reviews__data">Emily, Los Angele</p>
+      </div>
+      <div data-hash="slide-2" class="swiper-slide reviews__slide">
+        <div class="reviews__slide-image">
+          <img
+            class="reviews__photo"
+            srcset="
+              ./images/reviews_images/user_2@1x.webp 1x,
+              ./images/reviews_images/user_2@2x.webp 2x
+            "
+            src="./images/reviews_images/user_2@1x.webp"
+            alt="users photo"
+          />
+        </div>
+        <p class="reviews__text">
+          Every day we come to you with friends after classes in college. We
+          love your ice cream and casual atmosphere!
+        </p>
+        <p class="reviews__data">Bryan, New-York</p>
+      </div>
+      <div data-hash="slide-3" class="swiper-slide reviews__slide">
+        <div class="reviews__slide-image">
+          <img
+            class="reviews__photo"
+            srcset="
+              ./images/reviews_images/user_3@1x.webp 1x,
+              ./images/reviews_images/user_3@2x.webp 2x
+            "
+            src="./images/reviews_images/user_3@1x.webp"
+            alt="users photo"
+          />
+        </div>
+        <p class="reviews__text">
+          Ice cream is my passion! I love your chocolate hazelnut ice cream! And
+          I really like the excellent service - always served politely and
+          quickly!
+        </p>
+        <p class="reviews__data">Diana, Chicago</p>
+      </div>
+    </div>
+
+    </div>
+      <div class="swiper-pagination swiper-pagination-bullet"></div>  
+     
+  </div>
+<!-- </section> -->
+  <script src="./js/swiper-gallery.js"></script>
+  <script src="./js/swiper-reviews.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+</html>
