@@ -15,63 +15,70 @@
   <title>Document</title>
 </head>
 <body>
+  <div class="wrapper">
 
   <!-- <div class="reviews reviews__container"> -->
-<div class="swiper-container container gallery-slider">
+<div class="swiper-container gallery-slider">
   <div class="swiper-wrapper gallery-wrapper">
   <!-- <div class="gallery"> -->
-  <div data-hash="slide-1" class="swiper-slide gallery__slide">
-    <picture>
+  <div data-hash="slide-1" class="swiper-slide gallery-slide">
+    <!-- <picture>
       <source
         srcset="
           ./images/gallery_images/slide1@1.png 1x,
           ./images/gallery_images/slide1@2.png 2x
         "
         type="image/png"
-      />
+      /> -->
+      <div class="gallery-slide-img">
       <img
-        class="gallery__img"
+        class="gallery-img"
         src="./images/gallery_images/slide1.png"
         alt="fruit ice-cream"
       />
-    </picture>
+      </div>
+    <!-- </picture> -->
   </div>
   <div data-hash="slide-2" class="swiper-slide gallery__slide">
-    <picture>
+    <!-- <picture>
       <source
         srcset="
           ./images/gallery_images/slide2@1.png 1x,
           ./images/gallery_images/slide2@2.png 2x
         "
         type="image/png"
-      />
+      /> -->
+       <div class="gallery-slide-img">
       <img
         class="gallery__img"
         src="./images/gallery_images/slide2.png"
         alt="wow ice-cream"
       />
-    </picture>
+      </div>
+    <!-- </picture> -->
   </div>
   <div data-hash="slide-3" class="swiper-slide gallery__slide">
-    <picture>
+    <!-- <picture>
       <source
         srcset="
           ./images/gallery_images/slide3@1.png 1x,
           ./images/gallery_images/slide3@2.png 2x
         "
         type="image/png"
-      />
+      /> -->
+       <div class="gallery-slide-img">
       <img
         class="gallery__img"
         src="./images/gallery_images/slide3.png"
         alt="ice-cream cool"
       />
-    </picture>
-  </div>
+      </div>
+    <!-- </picture> -->
+  <!-- </div> -->
 <!-- </div> -->
 </div>
 <!-- </div> -->
-<div>
+<!-- <div>
 
 <div class="reviews reviews__container">
   <div class="swiper-container container reviews-slider">
@@ -134,13 +141,19 @@
       </div>
     </div>
 
-    </div>
-      <div class="swiper-pagination swiper-pagination-bullet"></div>  
+    </div> -->
+ 
      
   </div>
 <!-- </section> -->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+     <div class="swiper-pagination swiper-pagination-bullet"></div>  
+</div>
+</div>
+
   <script src="./js/swiper-gallery.js"></script>
-  <script src="./js/swiper-reviews.js"></script>
+  <!-- <script src="./js/swiper-reviews.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>

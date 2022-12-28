@@ -1,40 +1,13 @@
 /* common */
-body {
+html, body {
+   height: 100%;
+   line-height: 1;
    font-family: "Montserrat", sans-serif;
    font-weight: 400;
    color: #fcfcfc;
 
-   background-attachment: fixed;
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-
-   @media screen and (max-width: 767.98px) {
-      background-image: url(/images/bg_image/bg_phone_1x.jpg);
-      @media (min-device-pixel-ratio: 2),
-         (min-resolution: 192dpi),
-         (min-resolution: 2dppx) {
-         background-image: url(/images/bg_image/bg_phone_2x.jpg);
-      }
-   }
-   @media screen and (min-width: 768px) {
-      background-image: url(/images/bg_image/bg_tablet_1x.jpg);
-      @media (min-device-pixel-ratio: 2),
-         (min-resolution: 192dpi),
-         (min-resolution: 2dppx) {
-         background-image: url(/images/bg_image/bg_tablet_2x.jpg);
-      }
-   }
-   @media screen and (min-width: 1200px) {
-      background-image: url(/images/bg_image/bg_desctop_1x.jpg);
-      @media (min-device-pixel-ratio: 2),
-         (min-resolution: 192dpi),
-         (min-resolution: 2dppx) {
-         background-image: url(/images/bg_image/bg_desctop_2x.jpg);
-      }
-   }
 }
-.visually-hidden {
+/* .visually-hidden {
    position: absolute;
    white-space: nowrap;
    width: 1px;
@@ -46,50 +19,51 @@ body {
    clip-path: inset(50%);
    margin: -1px;
 }
-.wrapper {
-   min-height: 100%;
-   display: flex;
-   flex-direction: column;
-   overflow: clip;
-}
+
 
 a {
    text-decoration: none;
    color: inherit;
-}
+} */
 
 p {
    font-weight: inherit;
    font-size: inherit;
    margin: 0;
 }
-img {
+/* img {
    display: block;
    max-width: 100%;
    height: auto;
-   /* //   vertical-align: top; */
+   vertical-align: top;
+} */
+
+
+.wrapper {
+   min-height: 100%;
+   padding: 30px;
+   /* display: flex;
+   flex-direction: column;
+   overflow: clip; */
 }
-html,
-body {
-   height: 100%;
-   line-height: 1;
-}
-button,
-input {
-   font-weight: inherit;
-   font-size: inherit;
-   color: inherit;
-   font-family: inherit;
-}
-button {
-   cursor: pointer;
-   background-color: inherit;
-}
+/* .block {
+   display: flex;
+} */
+ /* .block-side {
+flex: 0 0 300px;
+background-color: #84a178;
+ } */
+ /* .block-body {
+   padding: 0 0 0 30px;
+   flex: 1 1 auto;
+   min-width: 0;
+ } */
 
 /* gallery */
 .gallery-slider {
-   position: relative;
-   padding-top: 50px;
+   /* position: relative; */
+   /* padding-top: 50px; */
+   padding: 30px 0 70px 0;
     margin: 0 auto;
    /* @media screen and (min-width: 768px) {
       padding-top: 0;
@@ -98,14 +72,45 @@ button {
       padding-top: 0;
    } */
 }
-.gallery__slide {
+.gallery-slide-img {
+   text-align: center;
+}
+.gallery-img {
+   max-width: 100%;
+}
+.swiper-container {
+   text-align: center;
+   margin: 0;
+   padding: 0;
+}
+/* // Pagination */
+.gallery-slider .swiper-pagination {
+ 
+   bottom: 0;
+   
+}
+.gallery-slider .swiper-button-next::after,
+.gallery-slider .swiper-button-prev::after {
+   font-size: 80px;
+   color:#485941;
+}
+/* // Bullets */
+.gallery-slider .swiper-pagination-bullet {
+   width: 14px;
+   height: 14px;
+   line-height: 14px;
+   font-size: 14px;
+   background-color: #485941;
+   
+}
+/* .gallery__slide {
    margin-left: auto;
    margin-right: auto;
 }
 
 .gallery-wrapper {
    margin-top: 32px;
-   margin-bottom: 80px;
+   margin-bottom: 80px; */
    /* @media screen and (min-width: 768px) {
       margin-top: -144px;
       margin-bottom: 100px;
@@ -114,7 +119,7 @@ button {
       margin-top: -98px;
       margin-bottom: 140px;
    } */
-}
+/* } */
 
 /* 
   //  {
@@ -152,11 +157,11 @@ button {
       margin-bottom: 130px;
    }
 } */
-.gallery__img {
+/* .gallery__img {
    padding: 0;
    margin-left: auto;
    margin-right: auto;
-}
+} */
 /* // reviews */
 .reviews {
    margin: 0 auto;
@@ -245,23 +250,4 @@ button {
       font-size: 20px;
    }
 }
-.swiper-container {
-   text-align: center;
-   margin: 0;
-   padding: 0;
-}
-/* // Pagination */
-.reviews-slider .swiper-pagination {
-   margin: 0 auto;
-   bottom: 0;
-   
-}
-/* // Bullets */
-.reviews-slider .swiper-pagination-bullet {
-   width: 14px;
-   height: 14px;
-   line-height: 14px;
-   font-size: 14px;
-   background-color: #84a178;
-   
-}
+
